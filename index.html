@@ -486,54 +486,6 @@
       .lieu-wrap { grid-template-columns: 1fr; }
     }
 
-    /* ── VIDEO / HIGGSFIELD ── */
-    #video-section {
-      background: var(--cream);
-      padding: 6rem 2rem;
-    }
-    .video-wrapper {
-      max-width: 800px;
-      margin: 0 auto;
-      border: 1px solid var(--border);
-      background: var(--ivory);
-      overflow: hidden;
-      position: relative;
-    }
-    .video-placeholder {
-      aspect-ratio: 16/9;
-      background: linear-gradient(135deg, var(--blush) 0%, var(--cream) 40%, var(--rose-light) 100%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-    }
-    .video-placeholder-icon { font-size: 4rem; opacity: 0.5; }
-    .video-placeholder p {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.2rem;
-      font-style: italic;
-      color: var(--rose);
-    }
-    .video-placeholder small { font-size: 0.75rem; color: var(--text-soft); }
-    /* If a real video URL is added: */
-    .video-wrapper video, .video-wrapper iframe {
-      width: 100%;
-      aspect-ratio: 16/9;
-      display: block;
-      border: none;
-    }
-    .video-caption {
-      padding: 1.5rem 2rem;
-      text-align: center;
-    }
-    .video-caption p {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem;
-      font-style: italic;
-      color: var(--text-soft);
-    }
-
     /* ── RSVP ── */
     #rsvp { background: var(--blush); }
     #rsvp .section-title em { color: var(--rose); }
@@ -650,7 +602,6 @@
       <li><a href="#histoire">Notre Histoire</a></li>
       <li><a href="#programme">Programme</a></li>
       <li><a href="#lieu">Le Lieu</a></li>
-      <li><a href="#video-section">Notre Film</a></li>
       <li><a href="#rsvp">RSVP</a></li>
     </ul>
   </nav>
@@ -855,32 +806,6 @@
     </div>
   </section>
 
-  <!-- NOTRE FILM (Higgsfield) -->
-  <section id="video-section">
-    <div class="section-inner narrow center">
-      <div class="section-tag">Notre Film</div>
-      <h2 class="section-title">Un moment d'<em>émotion</em></h2>
-      <div class="gold-rule"><div class="line"></div><span class="diamond">◆</span><div class="line"></div></div>
-    </div>
-    <div class="video-wrapper" style="max-width:800px;margin:0 auto;">
-      <!--
-        Pour intégrer votre film Higgsfield :
-        Remplacez le bloc ci-dessous par :
-        <video src="VOTRE_URL_HIGGSFIELD.mp4" controls autoplay muted loop poster="thumbnail.jpg"></video>
-        ou
-        <iframe src="LIEN_EMBED_HIGGSFIELD" allow="autoplay" allowfullscreen></iframe>
-      -->
-      <div class="video-placeholder">
-        <div class="video-placeholder-icon">🎬</div>
-        <p>Notre film Higgsfield</p>
-        <small>Remplacez ce bloc par votre vidéo générée</small>
-      </div>
-      <div class="video-caption">
-        <p>« Parce que les plus beaux moments méritent d'être racontés. »</p>
-      </div>
-    </div>
-  </section>
-
   <!-- RSVP -->
   <section id="rsvp">
     <div class="section-inner narrow center">
@@ -1003,12 +928,6 @@
     // ── LIEU
     gsap.from('.lieu-img',     { opacity: 0, x: -40, duration: 1, ease: 'power2.out', scrollTrigger: { trigger: '#lieu', start: 'top 70%' } });
     gsap.from('.lieu-details', { opacity: 0, x: 40,  duration: 1, ease: 'power2.out', delay: 0.2, scrollTrigger: { trigger: '#lieu', start: 'top 70%' } });
-
-    // ── VIDEO section
-    gsap.from('.video-wrapper', {
-      opacity: 0, y: 30, duration: 1, ease: 'power2.out',
-      scrollTrigger: { trigger: '#video-section', start: 'top 75%' }
-    });
 
     // ── COUNTDOWN
     function updateCountdown() {
