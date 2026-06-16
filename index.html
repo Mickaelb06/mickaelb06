@@ -35,6 +35,57 @@
       overflow-x: hidden;
     }
 
+    /* ── SPLASH SCREEN ── */
+    #splash {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: var(--cream);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+    #splash.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+    .splash-names {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(3.5rem, 10vw, 6rem);
+      color: var(--rose);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .splash-date {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      color: var(--text-soft);
+      margin-bottom: 2.5rem;
+    }
+    .splash-btn {
+      display: inline-block;
+      padding: 1rem 3rem;
+      border: 1px solid var(--gold);
+      background: transparent;
+      color: var(--gold);
+      font-family: 'Lato', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .splash-btn:hover { background: var(--gold); color: var(--ivory); }
+    .splash-note {
+      margin-top: 1rem;
+      font-size: 0.7rem;
+      color: var(--text-soft);
+      letter-spacing: 0.1em;
+    }
+
     /* ── MUSIC PLAYER ── */
     #music-btn {
       position: fixed;
@@ -587,8 +638,16 @@
 </head>
 <body>
 
+  <!-- SPLASH -->
+  <div id="splash">
+    <div class="splash-names">Anna &amp; Noam</div>
+    <div class="splash-date">15 Juin 2026 · Tel Aviv, Israël</div>
+    <button class="splash-btn" onclick="enterSite()">Entrer ♥</button>
+    <p class="splash-note">♪ La musique se lancera automatiquement</p>
+  </div>
+
   <!-- MUSIC -->
-  <button id="music-btn" title="Musique" onclick="toggleMusic()">♪</button>
+  <button id="music-btn" title="Musique" onclick="toggleMusic()">♬</button>
   <iframe id="yt-frame"
     src="https://www.youtube.com/embed/6BiGfqPXPt8?start=90&autoplay=0&enablejsapi=1"
     allow="autoplay; encrypted-media"
@@ -1003,48 +1062,50 @@
     }
     animatePetals();
 
-    // ── MUSIC toggle via YouTube iframe API
-    let musicPlaying = false;
+    // ── SPLASH + MUSIC
     let player = null;
+    let musicPlaying = false;
 
     function onYouTubeIframeAPIReady() {
+      const frame = document.getElementById('yt-frame');
       player = new YT.Player('yt-frame', {
-        events: { onReady: () => {} }
+        events: {
+          onReady: (e) => { e.target.playVideo(); musicPlaying = true; }
+        }
       });
+    }
+
+    function startMusic() {
+      const frame = document.getElementById('yt-frame');
+      frame.style.display = 'block';
+      frame.style.position = 'fixed';
+      frame.style.bottom = '-9999px';
+      frame.style.width = '1px';
+      frame.style.height = '1px';
+      frame.src = 'https://www.youtube.com/embed/6BiGfqPXPt8?start=90&autoplay=1&enablejsapi=1';
+
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.head.appendChild(tag);
+
+      document.getElementById('music-btn').classList.add('playing');
+    }
+
+    function enterSite() {
+      document.getElementById('splash').classList.add('hidden');
+      startMusic();
     }
 
     function toggleMusic() {
       const btn = document.getElementById('music-btn');
-      const frame = document.getElementById('yt-frame');
-
-      if (!player) {
-        // First click: show frame and load API
-        frame.style.display = 'block';
-        frame.style.position = 'fixed';
-        frame.style.bottom = '-9999px';
-        frame.style.width = '1px';
-        frame.style.height = '1px';
-        frame.src = frame.src.replace('autoplay=0', 'autoplay=1');
-        musicPlaying = true;
-        btn.classList.add('playing');
-        btn.textContent = '♬';
-
-        // Load YT API if needed
-        if (!window.YT) {
-          const tag = document.createElement('script');
-          tag.src = 'https://www.youtube.com/iframe_api';
-          document.head.appendChild(tag);
-        }
-        return;
-      }
-
+      if (!player) return;
       if (musicPlaying) {
-        player.pauseVideo && player.pauseVideo();
+        player.pauseVideo();
         btn.classList.remove('playing');
         btn.textContent = '♪';
         musicPlaying = false;
       } else {
-        player.playVideo && player.playVideo();
+        player.playVideo();
         btn.classList.add('playing');
         btn.textContent = '♬';
         musicPlaying = true;
