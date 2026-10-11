@@ -1,16 +1,92 @@
-<h1 align="center">Hi 👋, I'm Mickael</h1>
-<h3 align="center">A passionate Data Scientist ML/DL</h3>
+<div align="center">
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=mickaelb06&label=Profile%20views&color=0e75b6&style=flat" alt="mickaelb06" /> </p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00c27a&height=200&section=header&text=Mickael&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Cybers%C3%A9curit%C3%A9%20%7C%20Triage%20SOC%20%7C%20Audit%20automatis%C3%A9&descAlignY=60&descSize=18" alt="Mickael, cybersécurité, triage SOC, audit automatisé" />
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mickaelb06" alt="mickaelb06" /></a> </p>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=00C27A&center=true&vCenter=true&width=640&lines=Admin+r%C3%A9seau+devenu+analyste+SOC;Logs+%E2%86%92+MITRE+ATT%26CK+%E2%86%92+D3FEND;Audit+de+s%C3%A9curit%C3%A9+automatis%C3%A9;Je+construis+mes+outils+pour+pratiquer" alt="Admin réseau devenu analyste SOC" />
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://kaggle.com/mickael06" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="mickael06" height="30" width="40" /></a>
-</p>
+<br/>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-C00000?style=flat-square)
+![Sigma](https://img.shields.io/badge/Sigma-rules-0D1117?style=flat-square)
+![D3FEND](https://img.shields.io/badge/MITRE-D3FEND-1F6FEB?style=flat-square)
+![ATLAS](https://img.shields.io/badge/MITRE-ATLAS-00838F?style=flat-square)
+![ISO 27001](https://img.shields.io/badge/ISO-27001-2E7D32?style=flat-square)
+![NIS 2](https://img.shields.io/badge/NIS-2-6A1B9A?style=flat-square)
+![DORA](https://img.shields.io/badge/DORA-compliance-EF6C00?style=flat-square)
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mickaelb06&show_icons=true&locale=en" alt="mickaelb06" /></p>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+
+</div>
+
+---
+
+## 👋 À propos
+
+Je viens de l'administration réseau (environ 5 ans comme responsable informatique dans deux établissements scolaires) et je me spécialise en cybersécurité défensive, avec pour objectif de devenir **analyste SOC**.
+
+J'apprends en construisant : chaque outil ci-dessous répond à un besoin concret du métier.
+
+---
+
+## 🛠️ Projets
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🗺️ [Cartographe ATT&CK](https://github.com/Mickaelb06/cartographe-attack)
+**Triage SOC**
+
+On colle des logs, l'outil sort les techniques **MITRE ATT&CK** détectées, les lignes qui les prouvent et les contre-mesures **D3FEND** à prioriser.
+
+- 4 lectures du même incident : N1, N2, N3, responsable SOC
+- Formats : syslog, auth.log, access.log, Sysmon, JSON (ECS), XML Windows
+- Moteur **Sigma** : 6 règles maison + import SigmaHQ (1 439 règles sur 1 586 testées s'exécutent)
+
+`JavaScript` · `MIT`
+
+</td>
+<td width="50%" valign="top">
+
+### 🎯 [L'Orchestrateur](https://github.com/Mickaelb06/orchestrateur)
+**Audit de sécurité automatisé**
+
+À partir d'un domaine ou d'une IP, l'agent lance les outils de reconnaissance adaptés (nmap, DNS, en-têtes HTTP, SSL, CORS, e-mail security…) et génère un **rapport PDF**.
+
+- Mapping **MITRE ATT&CK** de chaque constat
+- Recommandations **ISO 27001, NIS 2, DORA**, référentiel NIST SP 800-53
+- Modèle de langage exécuté en local : les données de l'audit restent privées
+
+`Python`
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🧭 Parcours
+
+| | |
+|---|---|
+| **~5 ans** | Responsable informatique, Lycée Auguste Escoffier et Collège Frédéric Mistral (administration réseau) |
+| **Aujourd'hui** | Auto-formation à l'analyse SOC (détection, MITRE ATT&CK, Sigma) et construction d'outils pour pratiquer |
+
+## ⚙️ Comment je travaille
+
+Je conçois, teste et relis mes outils moi-même, en développant avec un assistant IA comme copilote.
+
+---
+
+<div align="center">
+
+### 📫 Me contacter
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mickael-0A66C2?style=for-the-badge)](https://linkedin.com/in/mickaelbellaiche)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00c27a&height=90&section=footer" alt="" />
+
+</div>
