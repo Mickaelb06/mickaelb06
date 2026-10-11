@@ -34,7 +34,7 @@
 
 ## 👋 À propos
 
-Je viens de l'administration réseau (environ 5 ans comme responsable informatique dans deux établissements scolaires) et je me spécialise en cybersécurité défensive, avec pour objectif de devenir **analyste SOC**.
+Je viens de l'administration réseau (environ 7 ans comme responsable informatique dans quatre établissements scolaires) et je me spécialise en cybersécurité défensive, avec pour objectif de devenir **analyste SOC**.
 
 J'apprends en construisant : chaque outil ci-dessous répond à un besoin concret du métier.
 
