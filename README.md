@@ -6,7 +6,7 @@
 
 <br/>
 
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Mon%20profil-212C42?style=for-the-badge&logo=tryhackme&logoColor=blue)](https://tryhackme.co/p/BlueLight)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Mon%20profil-212C42?style=for-the-badge&logo=tryhackme&logoColor=red)](https://tryhackme.co/p/BlueLight)
 
 **Menace** &nbsp;
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-D32F2F?style=flat-square)
