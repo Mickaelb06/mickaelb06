@@ -1,19 +1,25 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00c27a&height=200&section=header&text=Mickael&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Cybers%C3%A9curit%C3%A9%20%7C%20Triage%20SOC%20%7C%20Audit%20automatis%C3%A9&descAlignY=60&descSize=18" alt="Mickael, cybersécurité, triage SOC, audit automatisé" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1220,100:0077b6&height=200&section=header&text=Mickael&fontSize=62&fontColor=ffffff&fontAlignY=38&desc=Cybers%C3%A9curit%C3%A9%20%7C%20Triage%20SOC%20%7C%20Audit%20automatis%C3%A9&descAlignY=60&descSize=18" alt="Mickael, cybersécurité, triage SOC, audit automatisé" />
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=00C27A&center=true&vCenter=true&width=640&lines=Admin+r%C3%A9seau+devenu+analyste+SOC;Logs+%E2%86%92+MITRE+ATT%26CK+%E2%86%92+D3FEND;Audit+de+s%C3%A9curit%C3%A9+automatis%C3%A9;Je+construis+mes+outils+pour+pratiquer" alt="Admin réseau devenu analyste SOC" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1200&color=00B4D8&center=true&vCenter=true&width=640&lines=Admin+r%C3%A9seau+devenu+analyste+SOC;Logs+%E2%86%92+MITRE+ATT%26CK+%E2%86%92+D3FEND;Audit+de+s%C3%A9curit%C3%A9+automatis%C3%A9;Je+construis+mes+outils+pour+pratiquer" alt="Admin réseau devenu analyste SOC" />
 
 <br/>
 
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-C00000?style=flat-square)
-![Sigma](https://img.shields.io/badge/Sigma-rules-0D1117?style=flat-square)
-![D3FEND](https://img.shields.io/badge/MITRE-D3FEND-1F6FEB?style=flat-square)
-![ATLAS](https://img.shields.io/badge/MITRE-ATLAS-00838F?style=flat-square)
-![ISO 27001](https://img.shields.io/badge/ISO-27001-2E7D32?style=flat-square)
-![NIS 2](https://img.shields.io/badge/NIS-2-6A1B9A?style=flat-square)
-![DORA](https://img.shields.io/badge/DORA-compliance-EF6C00?style=flat-square)
+**Menace** &nbsp;
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-D32F2F?style=flat-square)
+![MITRE ATLAS](https://img.shields.io/badge/MITRE-ATLAS-F57C00?style=flat-square)
 
+**Défense** &nbsp;
+![MITRE D3FEND](https://img.shields.io/badge/MITRE-D3FEND-0077B6?style=flat-square)
+![Sigma](https://img.shields.io/badge/Sigma-rules-00B4D8?style=flat-square)
+
+**Conformité** &nbsp;
+![ISO 27001](https://img.shields.io/badge/ISO-27001-37474F?style=flat-square)
+![NIS 2](https://img.shields.io/badge/NIS-2-37474F?style=flat-square)
+![DORA](https://img.shields.io/badge/DORA-compliance-37474F?style=flat-square)
+
+**Outils** &nbsp;
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
@@ -85,8 +91,8 @@ Je conçois, teste et relis mes outils moi-même, en développant avec un assist
 
 ### 📫 Me contacter
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mickael-0A66C2?style=for-the-badge)](https://linkedin.com/in/mickaelbellaiche)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Mickael-0077B6?style=for-the-badge)](https://linkedin.com/in/mickaelbellaiche)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00c27a&height=90&section=footer" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1220,100:0077b6&height=90&section=footer" alt="" />
 
 </div>
