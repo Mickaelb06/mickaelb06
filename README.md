@@ -6,7 +6,7 @@
 
 <br/>
 
-[![TryHackMe](https://img.shields.io/badge/TryHackMe-Mon%20profil-212C42?style=for-the-badge&logo=tryhackme&logoColor=red)](https://tryhackme.com/p/BlueLight)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-Mon%20profil-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/BlueLight)
 
 **Menace** &nbsp;
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-D32F2F?style=flat-square)
@@ -24,6 +24,7 @@
 **Outils** &nbsp;
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 
@@ -33,7 +34,7 @@
 
 ## 👋 À propos
 
-Je viens de l'administration réseau (environ 7 ans comme responsable informatique dans quatres établissements scolaires) et je me spécialise en cybersécurité défensive, avec pour objectif de devenir **analyste SOC**.
+Je viens de l'administration réseau (environ 5 ans comme responsable informatique dans deux établissements scolaires) et je me spécialise en cybersécurité défensive, avec pour objectif de devenir **analyste SOC**.
 
 J'apprends en construisant : chaque outil ci-dessous répond à un besoin concret du métier.
 
@@ -72,6 +73,24 @@ On colle des logs, l'outil sort les techniques **MITRE ATT&CK** détectées, les
 
 </td>
 </tr>
+<tr>
+<td colspan="2" valign="top">
+
+### 🛡️ [FolderGuard](https://github.com/Mickaelb06/folderguard)
+**Intégrité des fichiers et honeypot**
+
+Deux petits outils de défense, construits pour comprendre la logique de détection d'un SOC.
+
+- **`fim`** (Rust, en ligne de commande) : détecte les fichiers modifiés, ajoutés ou supprimés par rapport à une référence SHA-256
+- **Honeypot SSH et telnet** : journalise les tentatives de connexion sans jamais ouvrir de terminal
+- **Site web** : contrôle d'intégrité dans le navigateur (rien n'est envoyé) et tableau de bord du journal du honeypot
+
+Mapping **MITRE ATT&CK** : T1565.001, T1070.004, T1554 (fim) · T1110, T1046, T1078 (honeypot)
+
+`Rust` · `HTML/JS` · `MIT`
+
+</td>
+</tr>
 </table>
 
 ---
@@ -80,12 +99,12 @@ On colle des logs, l'outil sort les techniques **MITRE ATT&CK** détectées, les
 
 | | |
 |---|---|
-| **~5 ans** | Responsable informatique, Lycée Auguste Escoffier et Collège Frédéric Mistral (administration réseau) |
+| **~7 ans** | Responsable informatique, des lycées Auguste Escoffier et Cadran Solaire ainsi que les Collèges Les Campelières et Frédéric Mistral (administration réseau) |
 | **Aujourd'hui** | Auto-formation à l'analyse SOC (détection, MITRE ATT&CK, Sigma) et construction d'outils pour pratiquer |
 
 ## ⚙️ Comment je travaille
 
-Je conçois, teste et relis mes outils moi-même, en développant avec un assistant IA comme copilote.
+Je conçois, teste et relis mes outils moi-même, en développant avec un assistant IA comme copilote. Chaque ligne de code est relue et comprise avant d'être gardée, et les outils sont testés avant publication.
 
 ---
 
